@@ -17,6 +17,7 @@ Provide a clear button to reset the calculator.
 Test the calculator with different arithmetic operations.
 PROGRAM:
 # HTML
+```
 <!DOCTYPE html>
 <html>
 <head>
@@ -64,8 +65,10 @@ function calculate(op) {
 </center>
 </body>
 </html>
+```
 
 # Style
+```
 *{
     margin: 0px;
     padding: 10px;
@@ -73,6 +76,7 @@ function calculate(op) {
 body{
     background-color: rgb(29, 141, 179);
 }
+```
 
 
 OUTPUT:
