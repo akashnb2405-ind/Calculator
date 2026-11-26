@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Simple Calculator </title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<center>
+<div class="box">
+<h2>Simple Calculator</h2>
+
+<input type="number" id="n1" placeholder="Enter first number">
+<br><br>
+
+<input type="number" id="n2" placeholder="Enter second number">
+<br><br>
+
+<button onclick="calculate('+')">+</button>
+<button onclick="calculate('-')">-</button>
+<button onclick="calculate('*')">*</button>
+<button onclick="calculate('/')">/</button>
+
+<h3 id="result">Result:</h3>
+
+<script>
+function calculate(op) {
+    let a = Number(document.getElementById("n1").value);
+    let b = Number(document.getElementById("n2").value);
+    let r;
+
+    if (op == '+')
+        r = a + b;
+    else if (op == '-')
+        r = a - b;
+    else if (op == '*')
+        r = a * b;
+    else if (op == '/')
+        r = b != 0 ? a / b : "Cannot divide by zero";
+
+    document.getElementById("result").innerHTML = "Result: " + r;
+}
+</script>
+</div>
+
+</center>
+</body>
+</html>
